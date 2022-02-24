@@ -9,38 +9,39 @@
 <html>
 <head>
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<div align="center">
+<div align="center" class="form-group">
     <h1>Employee Register Form</h1>
     <form action="<%=request.getContextPath() %>/register" method="POST">
-        <table style="width: 80%">
+        <table style="width: 20%">
             <tr>
                 <td>First Name</td>
-                <td><input type="text" name="firstName"></td>
+                <td><input type="text" class="form-control" name="firstName"></td>
             </tr>
             <tr>
                 <td>Last Name</td>
-                <td><input type="text" name="lastName"></td>
+                <td><input type="text" class="form-control" name="lastName"></td>
             </tr>
             <tr>
                 <td>Username</td>
-                <td><input type="text" name="username"></td>
+                <td><input type="text" class="form-control" name="username"></td>
             </tr>
             <tr>
                 <td>Password</td>
-                <td><input type="password" name="password"></td>
+                <td><input type="password" class="form-control" name="password"></td>
             </tr>
             <tr>
                 <td>Address</td>
-                <td><input type="text" name="address"></td>
+                <td><input type="text" class="form-control" name="address"></td>
             </tr>
             <tr>
                 <td>Contact No</td>
-                <td><input type="text" name="contact"></td>
+                <td><input type="text" class="form-control" name="contact"></td>
             </tr>
         </table>
-        <input type="submit" value="submit">
+        <input type="submit" class="btn btn-primary" value="submit">
     </form>
 </div>
 </body>
