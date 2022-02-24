@@ -35,7 +35,7 @@ public class EmployeeServlet extends HttpServlet {
         employee.setPassword(password);
         employee.setAddress(address);
         employee.setContact(contact);
-
+//sjdsjdbasd
         try{
             employeeDao.registerEmployee(employee);
         }catch (Exception ex){
