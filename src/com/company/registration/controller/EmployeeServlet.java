@@ -17,7 +17,6 @@ public class EmployeeServlet extends HttpServlet {
     private EmployeeDao employeeDao = new EmployeeDao();
 
 
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String firstName = req.getParameter("firstName");
@@ -35,7 +34,6 @@ public class EmployeeServlet extends HttpServlet {
         employee.setPassword(password);
         employee.setAddress(address);
         employee.setContact(contact);
-//sjdsjdbasd
         try{
             employeeDao.registerEmployee(employee);
         }catch (Exception ex){
